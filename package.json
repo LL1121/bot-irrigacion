@@ -1,0 +1,32 @@
+{
+  "name": "whatsapp-bot-irrigacion",
+  "version": "1.0.0",
+  "description": "Bot de WhatsApp para automatizar consultas administrativas de regantes en Irrigación",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "db:setup": "node scripts/database_setup.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "irrigacion",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "whatsapp-web.js": "^1.25.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "puppeteer": "^21.11.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
